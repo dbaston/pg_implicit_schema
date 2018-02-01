@@ -1,6 +1,6 @@
 CREATE FUNCTION auto_create_schema ()
-RETURNS event_trigger AS
-'implicit_schema.so'
+RETURNS event_trigger
+AS 'MODULE_PATHNAME', 'auto_create_schema'
 LANGUAGE c IMMUTABLE STRICT;
 
 CREATE EVENT TRIGGER auto_create_schema
