@@ -1,0 +1,4 @@
+default_version = '0.1'
+module_pathname = '$libdir/implicit_schema'
+relocatable = true
+comment = 'Causes schemas to be implicitly created when tables or views are created in them. Bad idea!'
